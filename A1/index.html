@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy</title>
+
+    <style>
+        body {
+            font-size: 1.125rem;
+            background-color: rgb(239, 255, 208);
+            background-image: url(../images/bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .layout {
+            width: 100%;
+            max-width: 90%;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        .head-one {
+            text-align: center;
+        }
+
+        div span{
+            color: #dae71d;
+        }
+
+        div img {
+            width:100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            padding-top: .50em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .col-1,
+        .col-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 1em;
+            text-align: justify;
+        }
+
+        .col-1 {
+            margin: 1em 0;
+        }
+
+        .col-1-start,
+        .col-1-end {
+            width: 30%;
+            margin: 0 1em;
+        }
+
+        .col-1-middle {
+            width: 50%;
+            margin: 0 2em;
+        }
+
+        .col-1-end p {
+            background-color: grey;
+            color: white;
+            padding: 1em;
+            margin-top: .50em;
+        }
+
+        .col-2-start {
+            width: 70%;
+        }
+
+        .col-2-end {
+            width: 24%;
+        }
+
+        .col-2-end p {
+            background-color: grey;
+            color: white;
+            padding: 3em 1em;
+            margin-top: .50em;
+        }
+
+        @media all and (max-width: 500px) {
+            body {
+                background: linear-gradient(#b7e9b7, #eff7ef);
+            }
+
+            .layout {
+                max-width: 90%;
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+                padding-top: .70em;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+
+            .col-1,
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                box-shadow: 1px 1px 10px rgb(63, 71, 63)
+            }
+
+            .col-1-start,
+            .col-1-middle,
+            .col-1-end {
+                width: 100%;
+                margin: .50em 0;
+            }
+
+            .col-2-start,
+            .col-2-end {
+                width: 100%;
+                margin: .50em 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div>
+            <h1 class="head-one">Let's start <span>getting a little</span> more fancy</h1>
+        </div>
+
+        <div>
+            <img src="../images/client-2.png" alt="client">
+        </div>
+
+        <div class="col-1">
+
+            <div class="col-1-start">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                    sunt quos corrupti necessitatibus dolor veritatis, suscipit repudiandae voluptate esse aut quisquam
+                    laudantium, fuga voluptates minima sint libero deleniti repellat dicta?Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-1-middle">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?</p>
+            </div>
+            <div class="col-1-end">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                    sunt quos corrupti necessitatibus dolor veritatis, suscipit repudiandae voluptate esse aut quisquam
+                    laudantium, fuga voluptates minima sint libero deleniti repellat dicta?Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+
+        <div class="col-2">
+
+            <div class="col-2-start">
+                <h2>Column 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt quos corrupti necessitatibus
+                    dolor veritatis, suscipit repudiandae voluptate esse aut quisquam laudantium, fuga voluptates minima
+                    sint libero deleniti repellat dicta?</p>
+            </div>
+            <div class="col-2-end">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis ipsa rem voluptas
+                    explicabo officiis commodi facilis, voluptatem veritatis illum!</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

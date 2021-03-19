@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    width:auto;
+}
+
+header{
+    background-color: #eee;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 12px #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#776c6c;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 2.2em;
+    text-transform: uppercase;
+    font-family: monospace;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover{
+    color: white;
+    background-color: #2b5a4a;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.say-hi a{
+    color: rgb(17, 197, 137);
+    text-decoration: none;
+    padding: .25em;
+    border-bottom: 3px solid rgb(17, 197, 137);
+}
+
+/* The logo Styling of the Header */
+.logo-text{
+    width: 70px;
+}
+
+/* End of header styling */
+
+
+/* Section Container Styling */
+.section-one{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7em 5em;
+}
+
+.model{
+    width: 80%;
+    object-fit: contain;
+}
+
+.section-one-right h1{
+    font-family: monospace;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.section-one-right p{
+    font-family: monospace;
+    font-size: 1.2em;
+    margin: 1.3em 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(126, 119, 119);
+}
+
+.section-one-right button{
+    font-family: monospace;
+    font-size: 1.2em;
+    padding: .70em 2em;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 700;
+    margin-left: .10em;
+    border-radius: 10px;
+    color: #e4dede;
+    background-color: rgb(17, 197, 137);
+    transition: all 1s ease;
+}
+
+.section-one-right button:hover{
+    color:rgb(17, 197, 137);
+    background-color:#f3f1f1;
+    transform: scale(1,1);
+    cursor:pointer;
+}
+
+/* End of Section One Styling */
+
+
+/* Section Two Container Styling */
+
+.section-two{
+    background:linear-gradient(#f2f7f2,#ffffff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 5px #e6e2e2;
+    margin-top:15%; 
+    padding-top: 5em;
+}
+
+.my-text-flip{
+    display: flex;
+    flex-direction: column;
+    margin:0 11em;
+}
+
+.text-flip p{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(17, 197, 137);
+    font-size: 1em;
+    margin-bottom: .80em;
+}
+
+.text-flip h1{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: sans-serif;
+    color:rgb(20, 13, 13);
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.text-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-text{
+    width: 12%;
+    box-shadow: 2px 2px 10px rgb(109, 99, 99);
+    border-radius: 20%;
+    padding: .70em;
+    margin-right: 1.5em;
+}
+
+.skill{
+    /* min-height: 500px; */
+    width: 100%;
+    margin-top: 2em;
+}
+
+.text-one{
+    margin-bottom: 2em;
+}
+
+.text-one h3{
+    text-transform: capitalize;
+    font-weight: 20;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-family: fantasy;
+    color: #706363;
+}
+
+.text-one p{
+    color: #aaa;
+    font-family: monospace;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.text-one p::first-letter{
+    color: rgb(100, 84, 84);
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+
+/*End of  Section Two Container Styling */
+
+/* Three Section Container Styling */
+
+.section-three{
+    width: 80%;
+    margin: 10em auto;
+}
+
+.section-three-text p,.design-header{
+   text-align: center;
+}
+
+.section-three-text p{
+    text-transform: uppercase;
+    color: rgb(17, 197, 137);
+    font-size: 1.5rem;
+    line-height: 3;
+    letter-spacing: 5px;
+    font-family: fantasy;
+    font-weight: 500;
+}
+
+.section-three-text h1{
+    text-transform: capitalize;
+    color: rgb(100, 84, 84);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+.project-image{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.mybutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    font-family: monospace;
+    font-size: 1.1em;
+    padding: .70em 4em;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #e4dede;
+    background-color: rgb(17, 197, 137);
+    transition: all 1s ease;
+}
+
+button:hover{
+    color:rgb(17, 197, 137);
+    background-color:#f8eded;
+    transform: scale(1);
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+/* End of Three Section Container Styling */
+
+/* Section Four Styling */
+
+.sec-four{
+    background:linear-gradient(#f2f7f2,#ffffff);
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+    height: 100vh;
+}
+
+.comment-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.comment-area p{
+    text-transform: uppercase;
+    color: rgb(17, 197, 137);
+    font-size: 1.5em;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-family: fantasy;
+    font-weight: 200;
+}
+
+.comment-area h1{
+    text-transform: capitalize;
+    color: rgb(56, 54, 54);
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+/* Client Section Styling */
+
+.client-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 10em;
+    text-align: center;
+}
+
+.client-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-section:hover{
+    transform: translateY(70px);
+    transition: all ease 1s;
+    box-shadow: 2px 2px 10px rgb(38, 49, 38);
+}
+
+.client{
+    box-shadow: 2px 2px 5px rgb(201, 204, 201);
+    margin: 2em 1.5em;
+    padding: 2.5em;
+    height: 400px;
+    width: 100%;
+}
+
+.client-section p{
+    text-transform: capitalize;
+    color: #7a8581;
+    font-size: .85em;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    /* -webkit-line-clamp: 5;
+    -webkit-box-orient: horizontal;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    margin-bottom: 1.8em;
+}
+
+.clients{
+    width: 80%;
+    border-radius: 7px;
+    margin-bottom: 1.8em;
+}
+
+.client-section button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .80em;
+    padding: 1em 3em;
+    text-transform: capitalize;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 900;
+    border-radius: 3px;
+    color: #fffdfd;
+    background-color: rgb(17, 197, 137);
+    transition: all 1s ease;
+}
+
+.client-section button:hover{
+    color:rgb(17, 197, 137);
+    background-color:#f8eded;
+    transform: scale(1);
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+
+ /* ENd of Section Four Styling */
+
+  /* The Contact Styling */
+ .contact-area-flex{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top:4em;
+     margin-bottom:1em;
+ }
+
+ .con-image{
+     width: 30%;
+     margin-top: 1.5em;
+ }
+
+ .contact-area-flex .form-level{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .80em;
+    padding: 1.2em 6em;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 900;
+    border-radius: 10px;
+    color: #e4dede;
+    background-color: #fafdfc;
+    box-shadow: 2px 2px 10px #b9b6b6;
+    transition: all 1s ease;
+ }
+
+input{
+    margin-right: .50em;
+    outline: none;
+    border: none;
+}
+
+.contact-area-flex button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 1em 3.5em;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #f0f0f0;
+    background-color: rgb(17, 197, 137);
+    transition: all 1s ease;
+}
+
+.contact-area-flex button:hover{
+    color:rgb(17, 197, 137);
+    background-color:#f8eded;
+    transform: scale(1);
+    cursor:pointer;
+    font-weight: bolder;
+}
+.contact-area-flex h1{
+    text-transform: capitalize;
+    color: rgb(56, 54, 54);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+/* The Footer Styling */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.3em;
+}
+
+.footer p{
+    text-transform: capitalize;
+    color: #2e3331;
+    font-size: 1.2em;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+/* Media Queries */
+@media(max-width:800px){
+    header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8df3cc;
+        box-shadow: 2px 2px 10px #2b2828;
+        position: fixed;
+        height: 250px;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+    .logo-text{
+        margin-top:.20em;
+        margin-bottom: .50em;
+    }
+
+    nav ul li a{
+        color:#3b1c1c;
+        font-weight: bolder;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2em;
+        text-transform: capitalize;
+        font-family: monospace;
+        transition: all 0.1s ease;
+    }
+    
+    nav ul li a:hover{
+        color: #e4f8ed;
+        padding: .30em 1em;
+        background: #192c22;
+        margin: 0;
+        display: inline-block;
+        cursor: pointer;
+    } 
+
+    .say-hi a{
+        color: #153632;
+        text-decoration: none;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        padding: .15em;
+        border-bottom: 3px solid #313635;
+    }
+
+    main{
+        margin-top: 3em;
+    }
+    /* Section One Styling */
+
+    .section-one{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .model{
+        width: 100%;
+    }
+
+    .section-one-right h1{
+        font-family: monospace;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1em; 
+    }
+
+    .section-one-right p{
+        font-family: monospace;
+        font-size: 1.2rem;
+        margin-top: 2em;
+        text-align: center;
+        margin: 1em 0;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #153632;;
+    }
+    .section-one-right button{
+        margin-left: 1.5em;
+        font-size: 1rem;
+        color: #eee;
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+    
+    /* Section Two */
+    .section-two{
+        flex-direction: column;
+    }
+
+    .my-text-flip{
+        text-align: center;
+    }
+
+    .img-text{
+        width: 70px;
+        border-radius: none;
+    }
+
+    .text-one{
+        display: flex;
+        margin: 2em 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-one h3{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .text-one p{
+        font-size: .80rem;
+        color: #1f130e;
+        font-weight: 500;
+    }
+
+    .skill{
+        max-width: 100%;
+        margin: .40em auto;
+        box-shadow: 2px 2px 10px #4b4848;
+        margin-top: 2em;
+    }
+
+  /* SEction Three Styling */
+    section-three{
+        margin:0;
+    }
+
+    /* Section Four Styling */
+    .clients{
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 1.8em;
+    }
+
+    .contact-area-flex h1{
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 1.3em 0;
+        letter-spacing: 1px;
+    }
+
+    .client-section p{
+        text-transform: capitalize;
+        color: #7a8581;
+        font-size: 1em;
+        /* display: block;
+        display: -webkit-box;
+        max-width: 80%;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: horizontal;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+        line-height: 1;
+        letter-spacing: 1px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 100;
+        margin-bottom: 1em;
+    }
+
+    .client-section:hover{
+        transform: translateX(50px);
+        transition: all ease 0.5s;
+        box-shadow: 2px 2px 10px rgb(38, 49, 38);
+    }
+
+ /*The Contact Area Styling */
+    .client-area{
+       flex-wrap: wrap;
+    }
+
+    .contact-area-flex{
+        margin-top: 60em;
+    }
+
+    .con-image{
+        width: 25%;
+    }
+
+  
+    /* Section Five Styling */
+    .footer{
+        margin-top: 5em;
+    }
+
+    .footer p{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+}
+
+@media(max-width:550px){
+    header{
+        height: 450px;
+        background-image: url(../images/bg.png);
+        background:linear-gradient(#c0d4b7,#faf4f4);
+        border: none;
+        outline: none;
+        position: static;
+    }
+
+   .logo-text{
+       margin-top: .10em;
+   }
+
+   nav ul{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* border: 2px solid maroon; */
+   }
+
+   nav ul li a{
+       display: flex;
+       /* border: 1px solid seagreen; */
+       padding: .40em 2em;
+       margin: .50em;
+       color:#3b1c1c;
+       font-weight: 800;
+       font-size: 1.5em;
+       font-family: monospace;
+   }
+   nav ul li a:hover{
+        color: #e4f8ed;
+        padding: .70em 3em;
+        background: #192c22;
+        cursor: pointer;
+} 
+   .say-hi a{
+        margin-top:1em;
+        padding: .15em;
+        /* border-bottom: 3px solid #171818; */
+}
+
+/* Section One Styling */
+
+.section-one-right h1{
+    font-family: monospace;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1em; 
+}
+
+.section-one-right p{
+    font-family: monospace;
+    font-size: .90rem;
+    margin-top: 2em;
+    text-align: center;
+    margin: 1em 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #153632;;
+}
+.section-one-right button{
+    font-size: 1rem;
+    margin-left: 1em;
+    color: #eee;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Two */
+.text-flip h1{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.text-flip p{
+    font-size: 0.90em;
+    font-weight: 800;
+}
+
+.img-text{
+    width: 50px;
+    margin-left: 1em;
+}
+
+.text-one h3{
+    font-size: 1rem;
+}
+
+.text-one p{
+    font-size: 0.80rem;
+}
+
+/* Section Three Styling */
+.section-three-text p{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.section-three-text h1{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/* Section Four */
+.client-section{
+    box-shadow: 2px 2px 10px #616e61;
+    height: 400px;
+    width: 500vw;
+}
+
+.clients{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.client button{
+    font-size: 1rem;
+    padding: .70em 5em;
+}
+
+.client-section:hover{
+    transform: translateX(20px);
+    transition: all ease 1s;
+    box-shadow: 2px 2px 10px rgb(38, 49, 38);
+}
+
+/* Contact Area */
+.con-image{
+    margin-top: 5em;
+}
+
+}
